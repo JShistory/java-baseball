@@ -16,7 +16,7 @@ public class BaseballGame {
     public void countBall(List<Integer> computer, List<Integer> user){
         for(int i=0; i<computer.size(); i++){
             if(computer.contains(user.get(i))){
-                countStrike(computer.indexOf(computer.get(i)),i);
+                countStrike(computer.indexOf(user.get(i)),i);
             }
         }
     }
