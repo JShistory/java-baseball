@@ -13,15 +13,15 @@ public class BaseballGame {
         user = new User();
     }
 
-    public void countBall(List<Integer> computer, List<Integer> user){
+    public void countStrikeBall(List<Integer> computer, List<Integer> user){
         for(int i=0; i<computer.size(); i++){
             if(computer.contains(user.get(i))){
-                countStrike(computer.indexOf(user.get(i)),i);
+                isStrike(computer.indexOf(user.get(i)),i);
             }
         }
     }
 
-    public void countStrike(int computerIndex, int index){
+    public void isStrike(int computerIndex, int index){
         if(computerIndex == index){
             strike ++;
             ball--;
