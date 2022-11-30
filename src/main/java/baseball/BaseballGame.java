@@ -1,8 +1,5 @@
 package baseball;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class BaseballGame {
     private User user;
     private Computer computer;
